@@ -2628,8 +2628,18 @@ input, select, textarea {
 				margin-top: 0;
 			}
 
+			.image.fit {
+    			width: 100%;
+    			height: 220px;   /* controls card image height */
+   			 	overflow: hidden;
+			}
+
 			.image.fit img {
-				width: 100%;
+    			width: 100%;
+    			height: 100%;
+    			object-fit: cover;   /* KEY FIX */
+    			object-position: center;
+    			display: block;
 			}
 
 		.image.main {
